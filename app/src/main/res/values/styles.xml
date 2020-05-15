@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Theme used throughout App -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorSurface">@color/design_default_color_surface</item>
+        <item name="materialAlertDialogTheme">@style/Theme.MaterialComponents.Dialog.Alert</item>
+
+        <item name="toolbarStyle">@style/AppTheme.ToolbarStyle</item>
+    </style>
+
+    <!-- Toolbar Style -->
+    <style name="AppTheme.ToolbarStyle" parent="@style/Widget.AppCompat.Toolbar">
+        <!-- white text on top of primaryColor isn't legible, always use the dark theme toolbar -->
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark</item>
+    </style>
+
+    <!-- Theme used for ConversationPopupActivity -->
+    <style name="AppTheme.Popup" parent="AppTheme">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">stateUnchanged</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

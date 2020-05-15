@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<data>
+    <variable
+        name="message"
+        type="wtf.declan.muzzle.data.db.entities.MessageEntity" />
+
+    <variable
+        name="recipient"
+        type="wtf.declan.muzzle.recipient.Recipient" />
+</data>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/received_message_layout"
+        android:layout_margin="8dp">
+
+        <ImageView
+            android:id="@+id/recipient_icon"
+            android:layout_width="@dimen/recipient_icon_size"
+            android:layout_height="@dimen/recipient_icon_size"
+            android:layout_marginTop="5dp"
+            android:src="@{recipient.icon}"
+            android:contentDescription="@string/recipient_icon_description" />
+
+        <TextView
+            android:id="@+id/message_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/detailed_text_size"
+            android:layout_toEndOf="@id/recipient_icon"
+            android:padding="@dimen/message_padding"
+            android:text="@{message.body}"
+            android:textColor="#1f1f1f"
+            android:background="@drawable/message_received_background"
+            />
+
+    </RelativeLayout>
+</layout>

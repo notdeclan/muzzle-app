@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="wtf.declan.muzzle.view.ui.ConversationActivity">
+
+    <item
+        android:id="@+id/start_encryption_button"
+        android:icon="@drawable/ic_lock_open_white_24dp"
+        android:title="@android:string/search_go"
+        android:iconTint="#ffffff"
+        app:showAsAction="collapseActionView|ifRoom" />
+
+    <item
+        android:id="@+id/end_encryption_button"
+        android:icon="@drawable/ic_lock_white_24dp"
+        android:title="@android:string/search_go"
+        android:iconTint="#ffffff"
+        android:visible="false"
+        app:showAsAction="collapseActionView|ifRoom" />
+
+    <item
+        android:id="@+id/call_button"
+        android:icon="@drawable/ic_call_white_24dp"
+        android:iconTint="#ffffff"
+        android:title="@android:string/search_go"
+        app:showAsAction="collapseActionView|ifRoom" />
+
+</menu>

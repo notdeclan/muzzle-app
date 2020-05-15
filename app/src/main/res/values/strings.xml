@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Muzzle</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="text_message_hint">Send Message</string>
+    <string name="encrypted_message_hint">Send Encrypted Message</string>
+
+    <string name="message_placeholder">Message Text</string>
+    <string name="recipient_name_placeholder">Sender Name</string>
+    <string name="time_placeholder">Time</string>
+
+    <string name="keyboard_incognito_mode">Keyboard Incognito Mode</string>
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="delete">Delete</string>
+
+    <string name="initiate_session_title">Initiate Encryption</string>
+    <string name="initiate_session_message">Would you like to initiate an encrypted session with %s</string>
+    <string name="accept_encryption_title">Accept Encryption Initiation</string>
+    <string name="accept_encryption_message">%s has sent an initiation request, would you like to accept it?</string>
+
+    <string name="end_session_title">End Encryption</string>
+    <string name="end_session_message">Are you should you would like to end the encrypted session with %s</string>
+
+    <string name="contact_name_placeholder">Contact Name</string>
+    <string name="recipient_icon_description">Recipient Icon</string>
+    <string name="no_messages">No messages</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="notification_mark_as_read">Mark as read</string>
+    <string name="notification_quick_reply">Quick Reply</string>
+    <string name="notification_failed_content_title">Message Failure</string>
+    <string name="notification_failed_content_text">The message to %s failed to send</string>
+    <string name="sms_delivery_toast">Message received by %s</string>
+
+
+</resources>

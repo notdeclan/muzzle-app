@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="recipient"
+            type="wtf.declan.muzzle.recipient.Recipient" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/contact_list_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_margin="12dp">
+
+        <ImageView
+            android:id="@+id/recipient_icon"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@{recipient.icon}" />
+
+        <TextView
+            android:id="@+id/display_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/icon_margin"
+            android:layout_marginTop="11dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/recipient_icon"
+            android:text="@{recipient.displayName}"
+            android:textColor="?android:textColorPrimary" />
+
+    </RelativeLayout>
+</layout>

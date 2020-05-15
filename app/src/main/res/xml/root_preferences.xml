@@ -1,0 +1,70 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:title="Notifications"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            app:key="notification_state"
+            android:icon="@drawable/ic_notifications_active_green_24dp"
+            app:defaultValue="true"
+            app:title="Enabled" />
+
+        <SwitchPreferenceCompat
+            app:dependency="notification_state"
+            app:defaultValue="true"
+            android:icon="@drawable/ic_vibration_green_24dp"
+            app:key="notification_vibrate_state"
+            app:title="Vibrate" />
+
+        <SwitchPreferenceCompat
+            app:dependency="notification_state"
+            app:icon="@drawable/ic_lightbulb_outline_green_24dp"
+            app:defaultValue="true"
+            app:key="notification_lights_state"
+            app:title="Lights" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="Encryption"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            app:icon="@drawable/ic_lock_green_24dp"
+            app:key="session_auto_accept_state"
+            app:defaultValue="true"
+            app:title="Auto Accept Session requests"
+            app:summaryOff="Only accept session requests manually"
+            app:summaryOn="Automatically accepting encrypted session requests"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="Keyboard"
+        app:iconSpaceReserved="false">
+
+        <SwitchPreferenceCompat
+            app:key="keyboard_incognito_state"
+            app:defaultValue="true"
+            app:icon="@drawable/ic_incognito_green_24dp"
+            app:title="Keyboard Incognito Mode"
+            app:summaryOff="Default Keyboard and typing history enabled"
+            app:summaryOn="Incognito Keyboard keyboard won't learn any new words that you type or register anything you've written in order to make future predictions."/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="Messages"
+        app:iconSpaceReserved="false">
+
+        <Preference
+            android:title="Reset messages"
+            android:icon="@drawable/ic_delete_forever_green_24dp"
+            android:key="messages_reset_button"
+            android:summary="Remove all messages and sessions from database"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
