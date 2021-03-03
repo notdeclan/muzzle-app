@@ -2,6 +2,8 @@
 
 A fully-fledged text messaging app with support for fully 256-bit encrypted messages to provide seamless secure text messages between other users of the app. Created for module CMP309 - Software Development for Mobile Devices at the University of Abertay Dundee. 
 
+[Logo](/Muzzle Presentation/Slide15.PNG)
+
 ## Features
 - 256 bit Encrypted Messages over SMS
 - Support for Light and Dark Mode
